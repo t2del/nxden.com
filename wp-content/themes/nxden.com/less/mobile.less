@@ -1,0 +1,163 @@
+
+	@media (max-width: 1200px) {
+		header.main {
+			nav {
+				ul {
+					li {
+						a {
+							padding: 15px 19px;
+						}
+					}
+				}
+			}
+		}
+		#how-it-works {
+			.col-md-4, .col-md-8 {
+				padding-top: 55px;
+			}
+		}
+	}
+	@media (max-width: 992px) {
+		header.main {
+			height: 90px;
+			overflow: hidden;
+			-webkit-transition: all 600ms cubic-bezier(0.165, 0.84, 0.44, 1);
+			transition:         all 600ms cubic-bezier(0.165, 0.84, 0.44, 1);
+			&.active {
+				height: auto;
+			}
+			&.scrolled {
+				height:64px;
+				nav {
+					.toggle {
+						top:2px;
+					}
+				}
+				&.active {
+					height:298px;
+				}
+			}
+			.container {
+				position:relative;
+			}
+			.brand {
+				img {
+					margin-bottom:10px;
+				}
+			}
+			.col-md-8 {
+				position:static;
+			}
+			nav {
+				margin-top: 20px;
+				ul {
+					li {
+						display: block;
+						a {
+							text-align: center;
+						}
+						&:not(:last-child) {
+							border-bottom:1px solid @gray;
+							margin-right:0;
+						}
+					}
+				}
+				.toggle {
+					width:40px;
+					height: 40px;
+					border:2px solid white;
+					padding-top: 10px;
+					position: absolute;
+					top: 41px;
+					right: 15px;
+					z-index:999;
+					cursor: pointer;
+					span {
+						display: block;
+						height:2px;
+						background-color: white;
+						margin: 0 auto;
+						margin-bottom:5px;
+						width: 60%;
+					}
+				}
+			}
+		}
+		#what-we-do {
+			.col-md-4 {
+				margin-bottom:90px;
+			}
+		}
+		#how-it-works {
+			.col-md-4 {
+				padding-top:0;
+				padding-bottom: 30px;
+				text-align: center;
+			} 
+		}
+	}
+	@media (max-width: 768px) {}
+	@media (max-width: 760px) {
+		header.main {
+			.brand {
+				img {
+					height: 53px;
+					margin-top: 0;
+				}
+			}
+			.user-links {
+				text-align: center;
+			}
+		}
+		#top {
+			padding:150px 0 60px 0;
+			height: auto !important;
+			.slider-wrapper{
+				height: auto !important;
+			}
+			.slider {
+				position: static;
+				transform:none;
+				.item {
+					.title {
+						font-size: 35px;
+						line-height: 40px;
+					}
+				}
+			}
+		}
+		.section {
+			height: auto !important;
+			padding:60px 0;
+			.section-wrapper {
+				position: static;
+				transform:none;
+				text-align: center;
+			}
+			.title {
+				font-size: 35px;
+				line-height: 35px;
+			}
+		}
+		#what-we-do {
+			.service {
+				margin-bottom: 60px;
+				&:focus {
+					.title {
+						opacity:1;
+					}
+				}
+			}
+		}
+	}
+	@media (max-height: 600px) {
+		.section {
+			height:auto !important;
+			.section-wrapper {
+				//position:static;
+				//transform:none;
+				//-webkit-transform: none;
+				//padding:100px 0;
+			}
+		}
+	}
